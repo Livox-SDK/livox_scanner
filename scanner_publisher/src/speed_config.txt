@@ -1,0 +1,2 @@
+2     //speed: rpm
+360   //angle: degree
