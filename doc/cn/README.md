@@ -3,7 +3,7 @@
 ## 1.方案概述
 这个3D扫描解决方案主要包括一个Mid-40激光雷达、Manifold 2计算平台，以及一个带编码器的GM6020电机。LiDAR和电机安装在三脚架顶端，Mid-40将绕Z轴旋转，扫描空间内不同区域，点云数据融合电机角度后得到空间中的3维图像。
 
-![](../images/structure.png)
+<div align="center"><img src="../images/structure.png" width=80% /></div>
 
 ## 2.硬件列表
 
@@ -18,7 +18,7 @@
 
 下图显示了此设置的主要组件。
 
-![](../images/scanning_1.png)
+<div align="center"><img src="../images/scanning_1.png" width=80% /></div>
 
 ## 3.硬件连接
 
@@ -32,7 +32,7 @@
 
 5、GM6020 电源接口：接入24V直流电源；
 
-<div align=center><img src="../images/2.png" style="zoom:80%;" /></div>
+<div align="center"><img src="../images/2.png" width=100% /></div>
 
 *备注：*
 - 电机角度精度，GM6020电机的角度分辨率为 360/8192 ≈ 0.04 度。
@@ -74,22 +74,33 @@ roslaunch scanner_publisher scanner.launch
 
 ## 5.效果
 
-下面是实际工作时的效果：
+动态效果：
 
-### 车库场景
+<div align="center"><img src="../images/result/square.gif" width=90% /></div>
+
+建图完成后的效果：
+
+<div align="center"><img src="../images/result/square.png" width=90% /></div>
+
+## 6.使用览沃-泰览（Tele-15）激光雷达
+
+### 说明
+
+泰览Tele-15激光雷达具有测量距离远、探测精度高的特点，旋转后可获得空间大范围建图效果。
+
+*备注：*
+- 泰览Tele-15激光雷达配备Livox转接盒2.0，可直接接入24V直流电源，无需再使用DC-DC降压模块。
+
+### 效果
+
+<div align="center"><img src="../images/result/tele01.png" width=90% /></div>
+
+<div align="center"><img src="../images/result/tele02.png" width=90% /></div>
+
+<div align="center"><img src="../images/result/tele03.png" width=90% /></div>
+
+<div align="center"><img src="../images/result/tele04.png" width=90% /></div>
 
 动态效果：
 
-<div align=center><img src="../images/result/parkinglot.gif" style="zoom:80%;" /></div>
-建图完成后的效果：
-
-<div align=center><img src="../images/result/parkinglot.png" style="zoom:80%;" /></div>
-
-### 广场场景
-
-动态效果：
-
-<div align=center><img src="../images/result/square.gif" style="zoom:80%;" /></div>
-建图完成后的效果：
-
-<div align=center><img src="../images/result/square.png" style="zoom:80%;" /></div>
+<div align="center"><img src="../images/result/tele01.gif" width=90% /></div>

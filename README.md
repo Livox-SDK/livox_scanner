@@ -3,7 +3,7 @@
 ## 1.System overview
 The 3D scanning solution mainly consists of a MID-40, a DJI Manifold 2, and a GM6020 motor with an encoder. The LiDAR and the motor are mounted on top of a tripod and the MID-40 rotates around the z axis to scan different parts of the room. The point cloud data is then integrated to give an overall 3D image.
 
-![](doc/images/structure.png)
+<div align="center"><img src="doc/images/structure.png" width=80% /></div>
 
 ## 2.Hardware modules
 
@@ -18,7 +18,7 @@ First of all, you need to prepare the following hardware modules. The remarks ha
 
 Main components of this setup are shown in the follow figure.
 
-![](doc/images/scanning_1.png)
+<div align="center"><img src="doc/images/scanning_1.png" width=80% /></div>
 
 ## 3.Hardware connection
 
@@ -32,7 +32,7 @@ Main components of this setup are shown in the follow figure.
 
 5、GM6020 power interface: connect to 24V DC power;
 
-<div align=center><img src="doc/images/2.png" style="zoom:80%;" /></div>
+<div align="center"><img src="doc/images/2.png" width=100% /></div>
 
 *Remarks:*
 - Motor angle accuracy. GM6020 angle accuracy: 360/8192 ≈ 0.04.
@@ -71,20 +71,33 @@ roslaunch scanner_publisher scanner.launch
 
 ## 5.Result
 
-### Garage scene
+The real-time result:
+
+<div align="center"><img src="doc/images/result/square.gif" width=90% /></div>
+
+The finished result:
+
+<div align="center"><img src="doc/images/result/square.png" width=90% /></div>
+
+## 6.Livox Tele-15 example
+
+### Instruction
+
+Tele-15 has the characteristics of long measuring distance and high detection accuracy. After rotation, it can obtain a large-scale space mapping effect.
+
+*Remarks:*
+- The Tele-15 is equipped with Livox Converter 2.0, which can be directly connected to 24V DC power supply, without the need to use DC-DC buck module.
+
+### Result
+
+<div align="center"><img src="doc/images/result/tele01.png" width=90% /></div>
+
+<div align="center"><img src="doc/images/result/tele02.png" width=90% /></div>
+
+<div align="center"><img src="doc/images/result/tele03.png" width=90% /></div>
+
+<div align="center"><img src="doc/images/result/tele04.png" width=90% /></div>
 
 The real-time result:
 
-<div align=center><img src="doc/images/result/parkinglot.gif" style="zoom:80%;" /></div>
-The finished result:
-
-<div align=center><img src="doc/images/result/parkinglot.png" style="zoom:80%;" /></div>
-
-### Square scene
-
-The real-time result:
-
-<div align=center><img src="doc/images/result/square.gif" style="zoom:80%;" /></div>
-The finished result:
-
-<div align=center><img src="doc/images/result/square.png" style="zoom:80%;" /></div>
+<div align="center"><img src="doc/images/result/tele01.gif" width=90% /></div>
